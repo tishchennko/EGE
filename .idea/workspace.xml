@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="38" />
+    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="37" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.task-1-17514.executor": "Run",
+    "Python.task-1-17542.executor": "Run",
     "Python.task-1-1845.executor": "Run",
     "Python.task-1-4606.executor": "Run",
     "Python.task-1-9732.executor": "Run",
@@ -135,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735313674932</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="37">
+      <option name="closed" value="true" />
+      <created>1735313934686</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735313934686</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -146,6 +155,7 @@
     <MESSAGE value="25" />
     <MESSAGE value="61" />
     <MESSAGE value="38" />
-    <option name="LAST_COMMIT_MESSAGE" value="38" />
+    <MESSAGE value="37" />
+    <option name="LAST_COMMIT_MESSAGE" value="37" />
   </component>
 </project>
