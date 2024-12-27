@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="1845">
+    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="4606">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +47,7 @@
   "keyToString": {
     "Python.task-1-1845.executor": "Run",
     "Python.task-1-4606.executor": "Run",
+    "Python.task-1-9732.executor": "Run",
     "Python.task-1.executor": "Run",
     "Python.task-8.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -102,13 +103,22 @@
       <option name="project" value="LOCAL" />
       <updated>1735311651263</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="4606">
+      <option name="closed" value="true" />
+      <created>1735312531245</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735312531245</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="исправил 8 задание" />
     <MESSAGE value="1845" />
-    <option name="LAST_COMMIT_MESSAGE" value="1845" />
+    <MESSAGE value="4606" />
+    <option name="LAST_COMMIT_MESSAGE" value="4606" />
   </component>
 </project>
