@@ -56,6 +56,7 @@
     "Python.task-14-12246.executor": "Run",
     "Python.task-14-18122.executor": "Run",
     "Python.task-14-19406.executor": "Run",
+    "Python.task-5-14327.executor": "Run",
     "Python.task-5-18578.executor": "Run",
     "Python.task-8.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -175,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736261132742</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="46926015711">
+      <option name="closed" value="true" />
+      <created>1736263322688</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1736263322688</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
