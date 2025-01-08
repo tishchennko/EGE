@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="38">
+    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="46">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,28 +43,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.task-1-17514.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task-1-17542.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task-1-17620.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task-1-1845.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task-1-4606.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task-1-9732.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task-1-9770.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task-1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task-14-12246.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task-14-18122.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task-14-19406.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task-5-14327.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task-5-18578.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task-8-17627.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task-8.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.task-1-17514.executor": "Run",
+    "Python.task-1-17542.executor": "Run",
+    "Python.task-1-17620.executor": "Run",
+    "Python.task-1-1845.executor": "Run",
+    "Python.task-1-4606.executor": "Run",
+    "Python.task-1-9732.executor": "Run",
+    "Python.task-1-9770.executor": "Run",
+    "Python.task-1.executor": "Run",
+    "Python.task-14-12246.executor": "Run",
+    "Python.task-14-18122.executor": "Run",
+    "Python.task-14-19406.executor": "Run",
+    "Python.task-2.executor": "Run",
+    "Python.task-5-14327.executor": "Run",
+    "Python.task-5-18578.executor": "Run",
+    "Python.task-8-17627.executor": "Run",
+    "Python.task-8.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -201,7 +202,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736265320896</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="38">
+      <option name="closed" value="true" />
+      <created>1736329803073</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1736329803073</updated>
+    </task>
+    <task id="LOCAL-00017" summary="46">
+      <option name="closed" value="true" />
+      <created>1736329838503</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1736329838503</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -216,6 +233,7 @@
     <MESSAGE value="672" />
     <MESSAGE value="46926015711" />
     <MESSAGE value="38" />
-    <option name="LAST_COMMIT_MESSAGE" value="38" />
+    <MESSAGE value="46" />
+    <option name="LAST_COMMIT_MESSAGE" value="46" />
   </component>
 </project>
