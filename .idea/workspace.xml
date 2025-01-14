@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="82">
+    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="120">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,13 +53,9 @@
     "Python.task-1-9732.executor": "Run",
     "Python.task-1-9770.executor": "Run",
     "Python.task-1.executor": "Run",
-    "Python.task-12.executor": "Run",
     "Python.task-14-12246.executor": "Run",
     "Python.task-14-18122.executor": "Run",
     "Python.task-14-19406.executor": "Run",
-    "Python.task-14.executor": "Run",
-    "Python.task-15.executor": "Run",
-    "Python.task-16.executor": "Run",
     "Python.task-2.executor": "Run",
     "Python.task-5-14327.executor": "Run",
     "Python.task-5-18578.executor": "Run",
@@ -72,11 +68,6 @@
     "git-widget-placeholder": "main"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\BTishenko\PycharmProjects\EGE\probnik-08-01-2025" />
-    </key>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -245,63 +236,7 @@
       <option name="project" value="LOCAL" />
       <updated>1736332731315</updated>
     </task>
-    <task id="LOCAL-00020" summary="170">
-      <option name="closed" value="true" />
-      <created>1736333392018</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1736333392018</updated>
-    </task>
-    <task id="LOCAL-00021" summary="1775">
-      <option name="closed" value="true" />
-      <created>1736334360691</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1736334360691</updated>
-    </task>
-    <task id="LOCAL-00022" summary="9">
-      <option name="closed" value="true" />
-      <created>1736337469725</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1736337469725</updated>
-    </task>
-    <task id="LOCAL-00023" summary="9">
-      <option name="closed" value="true" />
-      <created>1736338903142</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1736338903142</updated>
-    </task>
-    <task id="LOCAL-00024" summary="37131">
-      <option name="closed" value="true" />
-      <created>1736339542751</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1736339542751</updated>
-    </task>
-    <task id="LOCAL-00025" summary="739259957">
-      <option name="closed" value="true" />
-      <created>1736339619047</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1736339619047</updated>
-    </task>
-    <task id="LOCAL-00026" summary="82">
-      <option name="closed" value="true" />
-      <created>1736340296293</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1736340296293</updated>
-    </task>
-    <option name="localTasksCounter" value="27" />
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -318,12 +253,6 @@
     <MESSAGE value="38" />
     <MESSAGE value="46" />
     <MESSAGE value="120" />
-    <MESSAGE value="170" />
-    <MESSAGE value="1775" />
-    <MESSAGE value="9" />
-    <MESSAGE value="37131" />
-    <MESSAGE value="739259957" />
-    <MESSAGE value="82" />
-    <option name="LAST_COMMIT_MESSAGE" value="82" />
+    <option name="LAST_COMMIT_MESSAGE" value="120" />
   </component>
 </project>
