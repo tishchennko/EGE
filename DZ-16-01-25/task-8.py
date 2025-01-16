@@ -1,12 +1,14 @@
-from string import*
+
 from itertools import*
 
-alp = digits + ascii_uppercase
 
 cnt = 0
-for val in product(alp[:16], repeat = 5):
-    val = ''.join(val)
-    if val.count('6') == 2  and '06' not in val and '26' not in val and '46' not in val and '86' not in val and '66' not in val \
-            and '60' not in val and '62' not in val and '64' not in val and '68' not in val:
-        cnt += 1
+for val in product('0123456789', repeat = 5):
+    if val.count('6') == 2 and val[0] != 0:
+        x = ''.join(val)
+        x = x.replace('0', '8', 1).replace('2', '8', 1).replace('4', '8', 1) \
+            .replace('6', '8', 1)
+        if x.count('86') == 0 and x.count('68') ==0:
+            cnt += 1
+
 print(cnt)
