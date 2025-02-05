@@ -26,12 +26,12 @@
     &quot;assignee&quot;: &quot;tishchennko&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/tishchennko/EGE.git",
-    "accountId": "1d850a7b-724e-4417-879b-1c01125fc661"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tishchennko/EGE.git&quot;,
+    &quot;accountId&quot;: &quot;65d549d3-8f3b-43a6-8030-4372a557d878&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -92,16 +92,13 @@
       <recent name="C:\Users\BTishenko\PycharmProjects\EGE\14-01-25-task-2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/probnik-26-01-25" />
-      <recent name="$PROJECT_DIR$/dz-22-01-25" />
-      <recent name="$PROJECT_DIR$/26-zadaniya" />
-      <recent name="$PROJECT_DIR$/input2" />
+      <recent name="C:\Users\BTishenko\PycharmProjects\EGE\26-zadaniya" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
       </set>
     </attachedChunks>
   </component>
@@ -447,15 +444,5 @@
     <MESSAGE value="commit" />
     <MESSAGE value="112 переделал" />
     <option name="LAST_COMMIT_MESSAGE" value="112 переделал" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/probnik-08-01-2025/task-8.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
