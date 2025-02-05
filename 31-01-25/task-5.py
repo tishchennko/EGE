@@ -1,4 +1,4 @@
-```
+
 def f(num, sys):
     res = ''
     while num:
@@ -16,4 +16,3 @@ for N in range(10, 100_000):
     if R > 423:
         ans.append(R)
 print(min(ans))
-```

@@ -1,4 +1,4 @@
-```
+
 from itertools import*
 
 count = 0
@@ -8,4 +8,3 @@ for val in product('012345678', repeat = 7):
             '555' not in val and '777' not in val and '888' not in val:
         count += 1
 print(count)
-```
