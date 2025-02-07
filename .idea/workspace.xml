@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="112 переделал" />
+    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="32 [[1264, 1273], [1288, 1298]]&#10;[1288, 1298]" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -415,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738073976186</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="32 [[1264, 1273], [1288, 1298]]&#10;[1288, 1298]">
+      <option name="closed" value="true" />
+      <created>1738431752920</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1738431752920</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -443,6 +451,7 @@
     <MESSAGE value="решаю 15" />
     <MESSAGE value="commit" />
     <MESSAGE value="112 переделал" />
-    <option name="LAST_COMMIT_MESSAGE" value="112 переделал" />
+    <MESSAGE value="32 [[1264, 1273], [1288, 1298]]&#10;[1288, 1298]" />
+    <option name="LAST_COMMIT_MESSAGE" value="32 [[1264, 1273], [1288, 1298]]&#10;[1288, 1298]" />
   </component>
 </project>
