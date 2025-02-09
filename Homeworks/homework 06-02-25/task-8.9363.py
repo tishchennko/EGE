@@ -1,14 +1,15 @@
+```
 from itertools import *
 
-alf = 'ХОЧУНАБЮДЖЕТ'
+alf = sorted(set('ХОЧУНАБЮДЖЕТ'))
 alf_2 = 'ОУАЮЕ'
-cnt = set()
-for val in permutations(alf):
+cnt = 0
+for val in permutations(alf,  12):
     val = ''.join(val)
     for i in alf_2:
         val = val.replace(i, 'x')
-    if 'xxxxx' not in val:
-        cnt.add(val)
+        if 'xxxxx' not in val:
+            cnt += 1
 
-print(len(cnt))
-
+print(cnt)
+```
