@@ -1,4 +1,4 @@
-```
+
 from itertools import *
 
 alf = sorted(set('ХОЧУНАБЮДЖЕТ'))
@@ -12,4 +12,4 @@ for val in permutations(alf,  12):
             cnt += 1
 
 print(cnt)
-```
+

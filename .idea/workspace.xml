@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="commit">
+    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="решать руками">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homeworks/homework 06-02-25/task-8.9363.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homeworks/homework 06-02-25/task-8.9363.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2qkl3ECsYgXfrtAn9Fzbq2xTbC5" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -74,6 +77,9 @@
     "Python.task-15.4327.executor": "Run",
     "Python.task-15.executor": "Run",
     "Python.task-16.executor": "Run",
+    "Python.task-17.4622.executor": "Run",
+    "Python.task-17.9748.executor": "Run",
+    "Python.task-17.9786.executor": "Run",
     "Python.task-2-1.1.executor": "Run",
     "Python.task-2-2.executor": "Run",
     "Python.task-2-4582.executor": "Run",
@@ -101,6 +107,7 @@
       <recent name="C:\Users\BTishenko\PycharmProjects\EGE\14-01-25-task-2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/17 задание ЕГЭ" />
       <recent name="$PROJECT_DIR$/probnik-26-01-25" />
       <recent name="$PROJECT_DIR$/dz-22-01-25" />
       <recent name="$PROJECT_DIR$/26-zadaniya" />
