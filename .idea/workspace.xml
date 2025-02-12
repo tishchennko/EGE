@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="решать руками">
+    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="17 задание кодом">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/homework 06-02-25/task-8.9363.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homeworks/homework 06-02-25/task-8.9363.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +79,7 @@
     "Python.task-17.4622.executor": "Run",
     "Python.task-17.9748.executor": "Run",
     "Python.task-17.9786.executor": "Run",
+    "Python.task-17.9840.executor": "Run",
     "Python.task-2-1.1.executor": "Run",
     "Python.task-2-2.executor": "Run",
     "Python.task-2-4582.executor": "Run",
@@ -482,11 +482,18 @@
       <option name="project" value="LOCAL" />
       <updated>1738789025114</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="17 задание кодом">
+      <option name="closed" value="true" />
+      <created>1739286317602</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1739286317602</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="1845" />
     <MESSAGE value="4606" />
     <MESSAGE value="25" />
     <MESSAGE value="61" />
@@ -511,7 +518,8 @@
     <MESSAGE value="43" />
     <MESSAGE value="476" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="17 задание кодом" />
+    <option name="LAST_COMMIT_MESSAGE" value="17 задание кодом" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
