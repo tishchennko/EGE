@@ -12,8 +12,8 @@ for N in range(1, 100_000):
         R = R[:len(R)//2] + '0' + R[len(R)//2:]
     else:
         R = R
-    R = int(R, 4)
+    R = int(R)
     if R <= 180:
         ans.append(N)
 print(max(ans))
-#63
+#31
