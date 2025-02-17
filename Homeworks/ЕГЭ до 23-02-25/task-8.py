@@ -1,6 +1,6 @@
 from itertools import *
 
-alf = sorted('КАЛЕЙДОСКОП')[::-1]
+alf = sorted(set(('КАЛЕЙДОСКОП')))[::-1]
 ans = []
 for pos, val in enumerate(product(alf, repeat = 6), 0):
     val = ''.join(val)
@@ -8,4 +8,4 @@ for pos, val in enumerate(product(alf, repeat = 6), 0):
         and pos % 2 == 0:
         ans.append(pos)
 print(min(ans))
-#821432
+#243698
