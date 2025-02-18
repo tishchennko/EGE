@@ -10,9 +10,9 @@ def f(x1, x2, c, win):
     else: return all(moves)
 
 for s in range(1, 110 + 1):
-    #if f(7, s, 0, [1]) == 0 and f(7, s, 0, [3]) == 1:
-        #print('#20:', s)
+    if f(7, s, 0, [1]) == 0 and f(7, s, 0, [3]) == 1:
+        print('#20:', s)
 # 25 26 27 36 37 38 50 51 52
-    if f(7, s, 0, [2, 4]) == 1 and f(7, s, 0, [2]) == 0:
-        print('#21', s)
+    #if f(7, s, 0, [2, 4]) == 1 and f(7, s, 0, [2]) == 0:
+        #print('#21', s)
 #33
