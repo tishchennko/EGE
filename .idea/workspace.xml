@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="решил шестое 8 из дз">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Difficult interst tasks/task-8-13298.py" beforeDir="false" afterPath="$PROJECT_DIR$/Difficult interst tasks/task-8-13298.py" afterDir="false" />
-    </list>
+    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="25 задание" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +19,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -93,6 +91,7 @@
     "Python.task-2-4607.executor": "Run",
     "Python.task-2.executor": "Run",
     "Python.task-23.executor": "Run",
+    "Python.task-25.executor": "Run",
     "Python.task-5-14327.executor": "Run",
     "Python.task-5-14331.executor": "Run",
     "Python.task-5-18578.executor": "Run",
@@ -137,14 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735214253346</updated>
-    </task>
-    <task id="LOCAL-00005" summary="4606">
-      <option name="closed" value="true" />
-      <created>1735312531245</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1735312531245</updated>
     </task>
     <task id="LOCAL-00006" summary="25">
       <option name="closed" value="true" />
@@ -530,11 +521,18 @@
       <option name="project" value="LOCAL" />
       <updated>1739547597082</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="25 задание">
+      <option name="closed" value="true" />
+      <created>1740229723604</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1740229723604</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="46926015711" />
     <MESSAGE value="38" />
     <MESSAGE value="46" />
     <MESSAGE value="120" />
@@ -559,7 +557,8 @@
     <MESSAGE value="решил четвертое 15 из дз" />
     <MESSAGE value="решил пятое 15 из дз" />
     <MESSAGE value="решил шестое 8 из дз" />
-    <option name="LAST_COMMIT_MESSAGE" value="решил шестое 8 из дз" />
+    <MESSAGE value="25 задание" />
+    <option name="LAST_COMMIT_MESSAGE" value="25 задание" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
