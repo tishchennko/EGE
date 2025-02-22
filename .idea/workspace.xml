@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="17 задание кодом" />
+    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="решил шестое 8 из дз">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Difficult interst tasks/task-8-13298.py" beforeDir="false" afterPath="$PROJECT_DIR$/Difficult interst tasks/task-8-13298.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,11 +74,16 @@
     "Python.task-15-6.executor": "Run",
     "Python.task-15-9746.executor": "Run",
     "Python.task-15.1.executor": "Run",
+    "Python.task-15.1320.executor": "Run",
+    "Python.task-15.18175.executor": "Run",
     "Python.task-15.4327.executor": "Run",
     "Python.task-15.executor": "Run",
     "Python.task-16.executor": "Run",
     "Python.task-17.17530.executor": "Run",
+    "Python.task-17.17873.executor": "Run",
+    "Python.task-17.19249.executor": "Run",
     "Python.task-17.4622.executor": "Run",
+    "Python.task-17.4705.executor": "Run",
     "Python.task-17.9748.executor": "Run",
     "Python.task-17.9786.executor": "Run",
     "Python.task-17.9840.executor": "Run",
@@ -92,6 +100,7 @@
     "Python.task-6.executor": "Run",
     "Python.task-8-17627.executor": "Run",
     "Python.task-8-18976.executor": "Run",
+    "Python.task-8.19753.executor": "Run",
     "Python.task-8.9363.executor": "Run",
     "Python.task-8.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -106,11 +115,11 @@
       <recent name="C:\Users\BTishenko\PycharmProjects\EGE\14-01-25-task-2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Homeworks/homework-14-02-25" />
       <recent name="$PROJECT_DIR$/17 задание ЕГЭ" />
       <recent name="$PROJECT_DIR$/probnik-26-01-25" />
       <recent name="$PROJECT_DIR$/dz-22-01-25" />
       <recent name="$PROJECT_DIR$/26-zadaniya" />
-      <recent name="$PROJECT_DIR$/input2" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -128,38 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735214253346</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Initial commit">
-      <option name="closed" value="true" />
-      <created>1735216417344</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1735216417344</updated>
-    </task>
-    <task id="LOCAL-00002" summary="исправил 8 задание">
-      <option name="closed" value="true" />
-      <created>1735306944909</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1735306944909</updated>
-    </task>
-    <task id="LOCAL-00003" summary="исправил 8 задание">
-      <option name="closed" value="true" />
-      <created>1735310923689</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1735310923689</updated>
-    </task>
-    <task id="LOCAL-00004" summary="1845">
-      <option name="closed" value="true" />
-      <created>1735311651263</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1735311651263</updated>
     </task>
     <task id="LOCAL-00005" summary="4606">
       <option name="closed" value="true" />
@@ -497,16 +474,66 @@
       <option name="project" value="LOCAL" />
       <updated>1739352078845</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="17 задание кодом">
+      <option name="closed" value="true" />
+      <created>1739352601807</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1739352601807</updated>
+    </task>
+    <task id="LOCAL-00048" summary="решил первое 17 из дз">
+      <option name="closed" value="true" />
+      <created>1739363416633</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1739363416633</updated>
+    </task>
+    <task id="LOCAL-00049" summary="решил второе 17 из дз">
+      <option name="closed" value="true" />
+      <created>1739364754689</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1739364754689</updated>
+    </task>
+    <task id="LOCAL-00050" summary="решил третье 17 из дз">
+      <option name="closed" value="true" />
+      <created>1739366325756</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1739366325757</updated>
+    </task>
+    <task id="LOCAL-00051" summary="решил четвертое 15 из дз">
+      <option name="closed" value="true" />
+      <created>1739366616034</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1739366616035</updated>
+    </task>
+    <task id="LOCAL-00052" summary="решил пятое 15 из дз">
+      <option name="closed" value="true" />
+      <created>1739367038193</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1739367038193</updated>
+    </task>
+    <task id="LOCAL-00053" summary="решил шестое 8 из дз">
+      <option name="closed" value="true" />
+      <created>1739547597082</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1739547597082</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="4606" />
-    <MESSAGE value="25" />
-    <MESSAGE value="61" />
-    <MESSAGE value="37" />
-    <MESSAGE value="55" />
-    <MESSAGE value="672" />
     <MESSAGE value="46926015711" />
     <MESSAGE value="38" />
     <MESSAGE value="46" />
@@ -526,7 +553,13 @@
     <MESSAGE value="476" />
     <MESSAGE value="commit" />
     <MESSAGE value="17 задание кодом" />
-    <option name="LAST_COMMIT_MESSAGE" value="17 задание кодом" />
+    <MESSAGE value="решил первое 17 из дз" />
+    <MESSAGE value="решил второе 17 из дз" />
+    <MESSAGE value="решил третье 17 из дз" />
+    <MESSAGE value="решил четвертое 15 из дз" />
+    <MESSAGE value="решил пятое 15 из дз" />
+    <MESSAGE value="решил шестое 8 из дз" />
+    <option name="LAST_COMMIT_MESSAGE" value="решил шестое 8 из дз" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
