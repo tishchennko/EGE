@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment=" 07.02.25">
+    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="урок 05-03-25">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_02_2025,_20_14_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_02_2025__20_14__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25 задание ЕГЭ/another type/task-25.3025.py" beforeDir="false" afterPath="$PROJECT_DIR$/25 задание ЕГЭ/another type/task-25.3025.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,12 +84,15 @@
     "Python.task-16.4596.executor": "Run",
     "Python.task-16.4621.executor": "Run",
     "Python.task-16.9747.executor": "Run",
+    "Python.task-16833.executor": "Run",
     "Python.task-17529.executor": "Run",
     "Python.task-2-1.1.executor": "Run",
     "Python.task-2-2.executor": "Run",
     "Python.task-2-4582.executor": "Run",
     "Python.task-2-4607.executor": "Run",
     "Python.task-2.executor": "Run",
+    "Python.task-25.17879.executor": "Run",
+    "Python.task-25.3025.executor": "Run",
     "Python.task-25.executor": "Run",
     "Python.task-5-14327.executor": "Run",
     "Python.task-5-14331.executor": "Run",
@@ -448,11 +454,18 @@
       <option name="project" value="LOCAL" />
       <updated>1738939800013</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="урок 05-03-25">
+      <option name="closed" value="true" />
+      <created>1741102501055</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1741102501055</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="исправил 8 задание" />
     <MESSAGE value="1845" />
     <MESSAGE value="4606" />
     <MESSAGE value="25" />
@@ -477,6 +490,7 @@
     <MESSAGE value="112 переделал" />
     <MESSAGE value="самостоялка 07.02.25" />
     <MESSAGE value=" 07.02.25" />
-    <option name="LAST_COMMIT_MESSAGE" value=" 07.02.25" />
+    <MESSAGE value="урок 05-03-25" />
+    <option name="LAST_COMMIT_MESSAGE" value="урок 05-03-25" />
   </component>
 </project>
