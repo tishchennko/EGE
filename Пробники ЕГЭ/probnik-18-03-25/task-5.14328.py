@@ -1,7 +1,9 @@
+from string import *
 def f(num, sys):
+    alf = digits + ascii_lowercase
     res = ''
     while num:
-        res += str(num % sys)
+        res += alf[num % sys]
         num //= sys
     return res[::-1]
 
