@@ -11,7 +11,7 @@ for h, v in cinema:
 ans = []
 for i in range(1, len(mesto) - 1):
     p1, p2 = mesto[i:i+2]
-    ans.append([min(p1, p2) - 1, i + 1 ])
+    ans.append([min(p1, p2) - 1, i + 1])
 
 ans = sorted(ans, key = lambda x: (x[1], -x[0]))
 
