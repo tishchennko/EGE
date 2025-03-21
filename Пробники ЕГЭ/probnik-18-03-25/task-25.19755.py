@@ -1,4 +1,3 @@
-```
 def is_prime(num):
     if num < 2:
         return False
@@ -31,4 +30,3 @@ for i in range(1_200_001, 10 ** 20):
         cnt += 1
         if cnt == 5:
             break
-```

@@ -1,13 +1,9 @@
-def f(A):
-    for x in range(1, 1000):
-        a_100 = A % 100
-        x_100 = 100 % x
-        f = ((A + x) > (700 - A)) and ((a_100 + x_100) > 50)
-        if f != 1:
-            return 0
-    return 1
 
-for A in range(1, 10_000):
-    if f(A) == 1:
-        print(A)
-        break
+A = 0
+f_usl = 0
+for x in[k * 0.25 for k in range(-1000, 10000)]:
+    B = 23 <= x <= 37
+    C = 41 <= x <= 73
+    f = not(((not B) <= C) <= A)
+    if f != f_usl:
+        print(x)

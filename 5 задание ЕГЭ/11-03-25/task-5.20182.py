@@ -1,4 +1,3 @@
-```
 def f(num, sys):
     res = ''
     while num:
