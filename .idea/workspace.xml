@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="28">
+    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="21-03-25">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_03_2025,_20_29_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_13_03_2025__20_29__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_03_2025_16_10_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_03_2025_16_10__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_03_2025,_16_23_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_03_2025__16_23__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/26 tasks Saturday lessons/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/5 задание ЕГЭ/11-03-25/task-5.20182.py" beforeDir="false" afterPath="$PROJECT_DIR$/5 задание ЕГЭ/11-03-25/task-5.20182.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/dz-22-01-25/Задание _8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/ЕГЭ до 23-02-25/17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/ЕГЭ до 23-02-25/18.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homeworks/ЕГЭ до 23-02-25/3.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Independent works/smstl/task-15.py" beforeDir="false" afterPath="$PROJECT_DIR$/Independent works/smstl/task-15.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Independent works/task-15.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Independent works/task-5.py" beforeDir="false" afterPath="$PROJECT_DIR$/Independent works/smstl/task-5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Independent works/task-8.py" beforeDir="false" afterPath="$PROJECT_DIR$/Independent works/smstl/task-8.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Пробники ЕГЭ/probnik-18-03-25/task-25.19755.py" beforeDir="false" afterPath="$PROJECT_DIR$/Пробники ЕГЭ/probnik-18-03-25/task-25.19755.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +64,7 @@
     "Python.task-1-4606.executor": "Run",
     "Python.task-1-9732.executor": "Run",
     "Python.task-1-9770.executor": "Run",
+    "Python.task-1.17965.executor": "Run",
     "Python.task-1.executor": "Run",
     "Python.task-12.14372.executor": "Run",
     "Python.task-12.19483.executor": "Run",
@@ -110,6 +106,14 @@
     "Python.task-17.9748.executor": "Run",
     "Python.task-17.9786.executor": "Run",
     "Python.task-17.9840.executor": "Run",
+    "Python.task-17.executor": "Run",
+    "Python.task-19-21.7850.executor": "Run",
+    "Python.task-19-21.executor": "Run",
+    "Python.task-19.17532.executor": "Run",
+    "Python.task-19.17638.executor": "Run",
+    "Python.task-19.1863.executor": "Run",
+    "Python.task-19.4599.executor": "Run",
+    "Python.task-19.4624.executor": "Run",
     "Python.task-2-1.1.executor": "Run",
     "Python.task-2-2.executor": "Run",
     "Python.task-2-4582.executor": "Run",
@@ -118,6 +122,7 @@
     "Python.task-23.6053.executor": "Run",
     "Python.task-23.executor": "Run",
     "Python.task-25.19755.executor": "Run",
+    "Python.task-25.19775.executor": "Run",
     "Python.task-25.executor": "Run",
     "Python.task-5-14327.executor": "Run",
     "Python.task-5-14331.executor": "Run",
@@ -146,11 +151,11 @@
       <recent name="C:\Users\BTishenko\PycharmProjects\EGE\14-01-25-task-2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Пробники ЕГЭ/probnik-30-03-25" />
       <recent name="$PROJECT_DIR$/Пробники ЕГЭ/probnik-18-03-25" />
       <recent name="$PROJECT_DIR$/17 задание ЕГЭ" />
       <recent name="$PROJECT_DIR$/23-задание ЕГЭ/dz" />
       <recent name="$PROJECT_DIR$/Homeworks/homework-14-02-25" />
-      <recent name="$PROJECT_DIR$/probnik-26-01-25" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -168,38 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735214253346</updated>
-    </task>
-    <task id="LOCAL-00019" summary="120">
-      <option name="closed" value="true" />
-      <created>1736332731315</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1736332731315</updated>
-    </task>
-    <task id="LOCAL-00020" summary="task-2">
-      <option name="closed" value="true" />
-      <created>1736865563743</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1736865563743</updated>
-    </task>
-    <task id="LOCAL-00021" summary="task-2">
-      <option name="closed" value="true" />
-      <created>1736865571596</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1736865571596</updated>
-    </task>
-    <task id="LOCAL-00022" summary="task-2">
-      <option name="closed" value="true" />
-      <created>1736867490073</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1736867490073</updated>
     </task>
     <task id="LOCAL-00023" summary="w z y x">
       <option name="closed" value="true" />
@@ -561,11 +534,42 @@
       <option name="project" value="LOCAL" />
       <updated>1742566262853</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="21-03-25">
+      <option name="closed" value="true" />
+      <created>1742567804913</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1742567804913</updated>
+    </task>
+    <task id="LOCAL-00069" summary="21-03-25">
+      <option name="closed" value="true" />
+      <created>1742597542114</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1742597542114</updated>
+    </task>
+    <task id="LOCAL-00070" summary="21-03-25">
+      <option name="closed" value="true" />
+      <created>1742597857976</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1742597857976</updated>
+    </task>
+    <task id="LOCAL-00071" summary="21-03-25">
+      <option name="closed" value="true" />
+      <created>1742598368456</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1742598368456</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="решаю 15" />
     <MESSAGE value="112 переделал" />
     <MESSAGE value="20157588" />
     <MESSAGE value="43" />
@@ -590,7 +594,8 @@
     <MESSAGE value="16 задание" />
     <MESSAGE value="ccc" />
     <MESSAGE value="28" />
-    <option name="LAST_COMMIT_MESSAGE" value="28" />
+    <MESSAGE value="21-03-25" />
+    <option name="LAST_COMMIT_MESSAGE" value="21-03-25" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
