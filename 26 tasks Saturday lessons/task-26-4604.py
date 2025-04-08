@@ -1,4 +1,4 @@
-with open('input.txt') as file:
+with open('26 (2).txt') as file:
     N = int(file.readline())
     boxes = [int(i) for i in file]
 
@@ -8,7 +8,7 @@ last_box = boxes[0]
 count = 1
 
 for box in boxes:
-    if last_box - box >= 3:
+    if last_box - box >= 9:
         last_box = box
         count += 1
 
