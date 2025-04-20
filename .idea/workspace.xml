@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="4-04-25">
+    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="пробник">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_04_2025,_15_40_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_04_2025__15_40__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2025,_16_27_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_04_2025__16_27__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/23-задание ЕГЭ/14-03-25/13972-23.py" beforeDir="false" afterPath="$PROJECT_DIR$/23-задание ЕГЭ/14-03-25/13972-23.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Пробники ЕГЭ/Пробник до 13-04-25/task-16.py" beforeDir="false" afterPath="$PROJECT_DIR$/Пробники ЕГЭ/Пробник до 13-04-25/task-16.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Пробники ЕГЭ/Пробник до 13-04-25/task-25.py" beforeDir="false" afterPath="$PROJECT_DIR$/Пробники ЕГЭ/Пробник до 13-04-25/task-25.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Пробники ЕГЭ/Пробник до 13-04-25/task-8.py" beforeDir="false" afterPath="$PROJECT_DIR$/Пробники ЕГЭ/Пробник до 13-04-25/task-8.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,15 +71,19 @@
     "Python.task-1-9732.executor": "Run",
     "Python.task-1-9770.executor": "Run",
     "Python.task-1.executor": "Run",
+    "Python.task-11784.executor": "Run",
     "Python.task-12.14372.executor": "Run",
     "Python.task-12.19483.executor": "Run",
     "Python.task-12.executor": "Run",
     "Python.task-13.11790.executor": "Run",
     "Python.task-13.11794.executor": "Run",
     "Python.task-13.11835.executor": "Run",
+    "Python.task-13.14648.executor": "Run",
     "Python.task-13.17526.executor": "Run",
     "Python.task-13.17554.executor": "Run",
     "Python.task-13.17632.executor": "Run",
+    "Python.task-13.17710.executor": "Run",
+    "Python.task-13.20807.executor": "Run",
     "Python.task-13.executor": "Run",
     "Python.task-14-12246.executor": "Run",
     "Python.task-14-18122.executor": "Run",
@@ -81,6 +91,7 @@
     "Python.task-14.18580.executor": "Run",
     "Python.task-14.19307.executor": "Run",
     "Python.task-14.executor": "Run",
+    "Python.task-14355.executor": "Run",
     "Python.task-14651.executor": "Run",
     "Python.task-14952.executor": "Run",
     "Python.task-15-17528.executor": "Run",
@@ -114,12 +125,14 @@
     "Python.task-17.9748.executor": "Run",
     "Python.task-17.9786.executor": "Run",
     "Python.task-17.9840.executor": "Run",
+    "Python.task-17.executor": "Run",
     "Python.task-19-21.executor": "Run",
     "Python.task-2-1.1.executor": "Run",
     "Python.task-2-2.executor": "Run",
     "Python.task-2-4582.executor": "Run",
     "Python.task-2-4607.executor": "Run",
     "Python.task-2.executor": "Run",
+    "Python.task-23.13968.executor": "Run",
     "Python.task-23.6053.executor": "Run",
     "Python.task-23.executor": "Run",
     "Python.task-25.14442.executor": "Run",
@@ -154,10 +167,10 @@
       <recent name="C:\Users\BTishenko\PycharmProjects\EGE\14-01-25-task-2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/17 задание ЕГЭ" />
       <recent name="$PROJECT_DIR$/Пробники ЕГЭ/Пробник до 13-04-25" />
       <recent name="C:\Users\BTishenko\PycharmProjects\EGE\9 задание ЕГЭ" />
       <recent name="$PROJECT_DIR$/Пробники ЕГЭ/probnik-18-03-25" />
-      <recent name="$PROJECT_DIR$/17 задание ЕГЭ" />
       <recent name="$PROJECT_DIR$/23-задание ЕГЭ/dz" />
     </key>
   </component>
@@ -176,14 +189,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735214253346</updated>
-    </task>
-    <task id="LOCAL-00019" summary="120">
-      <option name="closed" value="true" />
-      <created>1736332731315</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1736332731315</updated>
     </task>
     <task id="LOCAL-00020" summary="task-2">
       <option name="closed" value="true" />
@@ -569,11 +574,18 @@
       <option name="project" value="LOCAL" />
       <updated>1742566262853</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="пробник">
+      <option name="closed" value="true" />
+      <created>1744485179995</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1744485179996</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="решаю 15" />
     <MESSAGE value="112 переделал" />
     <MESSAGE value="20157588" />
     <MESSAGE value="43" />
@@ -598,7 +610,8 @@
     <MESSAGE value="16 задание" />
     <MESSAGE value="ccc" />
     <MESSAGE value="28" />
-    <option name="LAST_COMMIT_MESSAGE" value="28" />
+    <MESSAGE value="пробник" />
+    <option name="LAST_COMMIT_MESSAGE" value="пробник" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
