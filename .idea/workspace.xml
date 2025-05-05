@@ -53,6 +53,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.101104.executor": "Run",
+    "Python.16255.executor": "Run",
     "Python.4709.executor": "Run",
     "Python.task - 6.executor": "Run",
     "Python.task - 9.executor": "Run",
@@ -145,6 +146,7 @@
     "Python.task-5-18578.executor": "Run",
     "Python.task-5.14328.executor": "Run",
     "Python.task-5.20182.executor": "Run",
+    "Python.task-5.21891.executor": "Run",
     "Python.task-5.executor": "Run",
     "Python.task-6.17625.executor": "Run",
     "Python.task-6.executor": "Run",
@@ -194,14 +196,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735214253346</updated>
-    </task>
-    <task id="LOCAL-00021" summary="task-2">
-      <option name="closed" value="true" />
-      <created>1736865571596</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1736865571596</updated>
     </task>
     <task id="LOCAL-00022" summary="task-2">
       <option name="closed" value="true" />
@@ -587,7 +581,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745183998217</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="13">
+      <option name="closed" value="true" />
+      <created>1746263048212</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1746263048212</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
