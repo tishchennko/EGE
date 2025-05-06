@@ -12,7 +12,7 @@ def centroid(cluster):
 with open('27_A_21932.txt') as file:
     data = [list(map(float, i.split())) for i in file]
 
-eps = 1
+eps = 2
 clusters = []
 while data:
     cluster = [data.pop()]
