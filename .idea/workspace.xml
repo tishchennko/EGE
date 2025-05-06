@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="27" />
+    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="27">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8 задание ЕГЭ/16255.py" beforeDir="false" afterPath="$PROJECT_DIR$/8 задание ЕГЭ/16255.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +54,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.101104.executor": "Run",
+    "Python.16255.executor": "Run",
     "Python.4709.executor": "Run",
     "Python.task - 6.executor": "Run",
     "Python.task-1-1.executor": "Run",
@@ -105,6 +109,8 @@
     "Python.task-17.9840.executor": "Run",
     "Python.task-17.dosrok.executor": "Run",
     "Python.task-19.111.executor": "Run",
+    "Python.task-19566.executor": "Run",
+    "Python.task-19715.executor": "Run",
     "Python.task-2-1.1.executor": "Run",
     "Python.task-2-2.executor": "Run",
     "Python.task-2-4582.executor": "Run",
@@ -115,6 +121,7 @@
     "Python.task-24.dosrok.executor": "Run",
     "Python.task-25.19755.executor": "Run",
     "Python.task-25.executor": "Run",
+    "Python.task-27.20497.executor": "Run",
     "Python.task-27.21932.executor": "Run",
     "Python.task-5-14327.executor": "Run",
     "Python.task-5-14331.executor": "Run",
@@ -146,11 +153,11 @@
       <recent name="C:\Users\BTishenko\PycharmProjects\EGE\14-01-25-task-2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\BTishenko\PycharmProjects\EGE\27 задание ЕГЭ" />
       <recent name="C:\Users\BTishenko\PycharmProjects\EGE\17 задание ЕГЭ" />
       <recent name="C:\Users\BTishenko\PycharmProjects\EGE\9 задание ЕГЭ" />
       <recent name="$PROJECT_DIR$/Пробники ЕГЭ/probnik-18-03-25" />
       <recent name="$PROJECT_DIR$/17 задание ЕГЭ" />
-      <recent name="$PROJECT_DIR$/23-задание ЕГЭ/dz" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -168,14 +175,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735214253346</updated>
-    </task>
-    <task id="LOCAL-00021" summary="task-2">
-      <option name="closed" value="true" />
-      <created>1736865571596</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1736865571596</updated>
     </task>
     <task id="LOCAL-00022" summary="task-2">
       <option name="closed" value="true" />
@@ -561,7 +560,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746540729980</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="27">
+      <option name="closed" value="true" />
+      <created>1746540850954</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1746540850954</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
