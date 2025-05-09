@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="commit">
+    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="13">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13 задание ЕГЭ/task-13.10162.py" beforeDir="false" afterPath="$PROJECT_DIR$/13 задание ЕГЭ/task-13.10162.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,6 @@
   "keyToString": {
     "Python.101104.executor": "Run",
     "Python.16255.executor": "Run",
-    "Python.27-19567.executor": "Run",
     "Python.4709.executor": "Run",
     "Python.task - 6.executor": "Run",
     "Python.task - 9.executor": "Run",
@@ -113,7 +111,6 @@
     "Python.task-16.17749.executor": "Run",
     "Python.task-16.17755.executor": "Run",
     "Python.task-16.18123.executor": "Run",
-    "Python.task-16.6088.executor": "Run",
     "Python.task-16.executor": "Run",
     "Python.task-16833.executor": "Run",
     "Python.task-17.14952.executor": "Run",
@@ -121,16 +118,13 @@
     "Python.task-17.17873.executor": "Run",
     "Python.task-17.18582.executor": "Run",
     "Python.task-17.19249.executor": "Run",
-    "Python.task-17.21903.executor": "Run",
     "Python.task-17.4622.executor": "Run",
     "Python.task-17.4705.executor": "Run",
-    "Python.task-17.6089.executor": "Run",
     "Python.task-17.6791.executor": "Run",
     "Python.task-17.9748.executor": "Run",
     "Python.task-17.9786.executor": "Run",
     "Python.task-17.9840.executor": "Run",
     "Python.task-17.executor": "Run",
-    "Python.task-19-21.21905.executor": "Run",
     "Python.task-19-21.executor": "Run",
     "Python.task-19.19635.executor": "Run",
     "Python.task-2-1.1.executor": "Run",
@@ -144,13 +138,9 @@
     "Python.task-24.executor": "Run",
     "Python.task-25.14442.executor": "Run",
     "Python.task-25.19755.executor": "Run",
-    "Python.task-25.21909.executor": "Run",
     "Python.task-25.24.04.executor": "Run",
-    "Python.task-25.2579.executor": "Run",
-    "Python.task-25.6276.executor": "Run",
     "Python.task-25.8696.executor": "Run",
     "Python.task-25.executor": "Run",
-    "Python.task-27.21931.executor": "Run",
     "Python.task-5-14327.executor": "Run",
     "Python.task-5-14331.executor": "Run",
     "Python.task-5-18578.executor": "Run",
@@ -185,10 +175,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Пробники ЕГЭ/Пробник до 25" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/Пробники ЕГЭ/пробник май" />
-      <recent name="$PROJECT_DIR$/17 задание ЕГЭ" />
       <recent name="$PROJECT_DIR$/Пробники ЕГЭ/22-04-25" />
+      <recent name="$PROJECT_DIR$/17 задание ЕГЭ" />
+      <recent name="$PROJECT_DIR$/Пробники ЕГЭ/Пробник до 13-04-25" />
+      <recent name="C:\Users\BTishenko\PycharmProjects\EGE\9 задание ЕГЭ" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -206,6 +196,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735214253346</updated>
+    </task>
+    <task id="LOCAL-00022" summary="task-2">
+      <option name="closed" value="true" />
+      <created>1736867490073</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736867490073</updated>
     </task>
     <task id="LOCAL-00023" summary="w z y x">
       <option name="closed" value="true" />
@@ -591,21 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1746263048212</updated>
     </task>
-    <task id="LOCAL-00071" summary="commit">
-      <option name="closed" value="true" />
-      <created>1746468364808</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1746468364808</updated>
-    </task>
-    <option name="localTasksCounter" value="72" />
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20157588" />
     <MESSAGE value="43" />
     <MESSAGE value="476" />
+    <MESSAGE value="commit" />
     <MESSAGE value="17 задание кодом" />
     <MESSAGE value="решил первое 17 из дз" />
     <MESSAGE value="решил второе 17 из дз" />
@@ -627,8 +618,7 @@
     <MESSAGE value="28" />
     <MESSAGE value="пробник" />
     <MESSAGE value="13" />
-    <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="13" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
