@@ -14,6 +14,6 @@ def f(x1, x2, c, win):
     else:
         return any(moves)
 
-for s in range(22, 100):
+for s in range(22, 100+ 1):
     if f(50, s, 0, [1]) == 0 and f(50, s, 0, [2]) == 1:
         print(s)
