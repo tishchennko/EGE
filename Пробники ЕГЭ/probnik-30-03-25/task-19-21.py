@@ -1,3 +1,4 @@
+from math import ceil
 def f(x1, x2, c, win):
     if c > max(win):
         return 0
