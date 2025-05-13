@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="27">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8 задание ЕГЭ/16255.py" beforeDir="false" afterPath="$PROJECT_DIR$/8 задание ЕГЭ/16255.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,22 +118,9 @@
     "Python.task-2.executor": "Run",
     "Python.task-23.6053.executor": "Run",
     "Python.task-23.executor": "Run",
-    "Python.task-24.1866.executor": "Run",
-    "Python.task-24.1975.executor": "Run",
-    "Python.task-24.2942.executor": "Run",
-    "Python.task-24.3228.executor": "Run",
-    "Python.task-24.4602.executor": "Run",
-    "Python.task-24.4627.executor": "Run",
-    "Python.task-24.4710.executor": "Run",
-    "Python.task-24.6029.executor": "Run",
-    "Python.task-24.6636.executor": "Run",
-    "Python.task-24.7600.executor": "Run",
-    "Python.task-24.7624.executor": "Run",
-    "Python.task-24.8510.executor": "Run",
     "Python.task-24.dosrok.executor": "Run",
     "Python.task-25.19755.executor": "Run",
     "Python.task-25.executor": "Run",
-    "Python.task-27.18056.executor": "Run",
     "Python.task-27.20497.executor": "Run",
     "Python.task-27.21932.executor": "Run",
     "Python.task-5-14327.executor": "Run",
@@ -153,7 +141,6 @@
     "Python.task-9.9778.executor": "Run",
     "Python.task-9.executor": "Run",
     "Python.task.14.20490.executor": "Run",
-    "Python.task.24.3584.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -166,11 +153,11 @@
       <recent name="C:\Users\BTishenko\PycharmProjects\EGE\14-01-25-task-2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\BTishenko\PycharmProjects\EGE\24 задания ЕГЭ\2023" />
-      <recent name="C:\Users\BTishenko\PycharmProjects\EGE\24 задания ЕГЭ" />
       <recent name="C:\Users\BTishenko\PycharmProjects\EGE\27 задание ЕГЭ" />
       <recent name="C:\Users\BTishenko\PycharmProjects\EGE\17 задание ЕГЭ" />
       <recent name="C:\Users\BTishenko\PycharmProjects\EGE\9 задание ЕГЭ" />
+      <recent name="$PROJECT_DIR$/Пробники ЕГЭ/probnik-18-03-25" />
+      <recent name="$PROJECT_DIR$/17 задание ЕГЭ" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -188,6 +175,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1735214253346</updated>
+    </task>
+    <task id="LOCAL-00022" summary="task-2">
+      <option name="closed" value="true" />
+      <created>1736867490073</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1736867490073</updated>
     </task>
     <task id="LOCAL-00023" summary="w z y x">
       <option name="closed" value="true" />
@@ -573,15 +568,7 @@
       <option name="project" value="LOCAL" />
       <updated>1746540850954</updated>
     </task>
-    <task id="LOCAL-00071" summary="27">
-      <option name="closed" value="true" />
-      <created>1746546272399</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1746546272399</updated>
-    </task>
-    <option name="localTasksCounter" value="72" />
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
