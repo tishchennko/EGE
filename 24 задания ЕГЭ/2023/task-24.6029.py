@@ -1,5 +1,5 @@
-with open('24_6029.txt') as file:
-    data = file.readline()
+with open('24_6029.txt') as fil:
+    data = fil.readline()
 
 data = data.replace('EF', '*').replace('FE', '*')
 for i in 'EDF':
