@@ -5,3 +5,6 @@ for mask in range(33):
     net2 = ip_network(f'200.154.184.0/{mask}', False)
     if net1.network_address == net2.network_address:
         print(net1.netmask)
+
+number = 240
+print(bin(number)[2:])

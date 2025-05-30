@@ -7,7 +7,7 @@ def f(x):
     return (P and (not A)) <= Q
 
 ans = []
-line = [x/ 6 for x in range(254 * 6, 823 * 6)]
+line = [x/ 10 for x in range(254 * 10, 823 * 10)]
 
 for A1, A2 in combinations(line, 2):
     if all(f(x) for x in line):

@@ -10,5 +10,5 @@ def f(x, c, win):
         return all(moves)
 
 for s in range(1, 99 + 1):
-    if f(s, 0, [2, 4]) == 1 and f(s, 0, [2]) == 0:
+    if f(s, 0, [1]) == 0 and f(s, 0, [2]) == 0:
         print(s)
