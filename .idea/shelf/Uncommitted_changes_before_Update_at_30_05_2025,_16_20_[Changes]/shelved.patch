@@ -1,0 +1,370 @@
+Index: Пробники ЕГЭ/пробник май/task-15.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from itertools import *\n\ndef f(x):\n    P = 254 <= x <= 800\n    Q = 410 <= x <= 823\n    A = A1 <= x <= A2\n    return (P and (not A)) <= Q\n\nans = []\nline = [x/ 6 for x in range(254 * 6, 823 * 6)]\n\nfor A1, A2 in combinations(line, 2):\n    if all(f(x) for x in line):\n        ans.append(A2 - A1)\nprint(min(ans))
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Пробники ЕГЭ/пробник май/task-15.py b/Пробники ЕГЭ/пробник май/task-15.py
+--- a/Пробники ЕГЭ/пробник май/task-15.py	(revision 5a1cbd5b6939f688546e04708c23e75939636939)
++++ b/Пробники ЕГЭ/пробник май/task-15.py	(date 1747406846916)
+@@ -7,7 +7,7 @@
+     return (P and (not A)) <= Q
+ 
+ ans = []
+-line = [x/ 6 for x in range(254 * 6, 823 * 6)]
++line = [x/ 10 for x in range(254 * 10, 823 * 10)]
+ 
+ for A1, A2 in combinations(line, 2):
+     if all(f(x) for x in line):
+Index: Пробники ЕГЭ/пробник май/task-25.2579.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>def f(num):\n    res = set()\n    for i in range(2, int(num **.5) + 1):\n        if num % i == 0:\n            res |= {i, num // i}\n    res = sorted(res)\n\n    if len(res) <= 3:\n        return 0\n    S = res[-1] + res[-2] + res[-3]\n    for i in range(1, 100_000):\n        if S == int(i ** .5):\n            return S\n\ncnt = 0\nfor i in range(10_000_000, 10 ** 20):\n    S = f(i)\n    if S:\n        print(i, S)\n        cnt += 1\n        if cnt == 5:\n            break\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Пробники ЕГЭ/пробник май/task-25.2579.py b/Пробники ЕГЭ/пробник май/task-25.2579.py
+--- a/Пробники ЕГЭ/пробник май/task-25.2579.py	(revision 5a1cbd5b6939f688546e04708c23e75939636939)
++++ b/Пробники ЕГЭ/пробник май/task-25.2579.py	(date 1747406846896)
+@@ -5,18 +5,18 @@
+             res |= {i, num // i}
+     res = sorted(res)
+ 
+-    if len(res) <= 3:
++    if len(res) < 3:
+         return 0
+     S = res[-1] + res[-2] + res[-3]
+-    for i in range(1, 100_000):
+-        if S == int(i ** .5):
+-            return S
++    if S ** .5 == int(S ** .5):
++        return S
++    return 0
+ 
+ cnt = 0
+ for i in range(10_000_000, 10 ** 20):
+     S = f(i)
+     if S:
+-        print(i, S)
++        print( S)
+         cnt += 1
+         if cnt == 5:
+             break
+Index: Пробники ЕГЭ/пробник май/task-27.21931.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from math import dist\n\n\ndef centroid(cluster):\n    dists = []\n    for dot in cluster:\n        sum_dist = 0\n        for p1 in cluster:\n            sum_dist += dist(dot, p1)\n        dists.append([sum_dist, dot])\n    return max(dists)[1]\n\n\nwith open('../../27_A_21931.txt') as file:\n    data = [list(map(float, i.split())) for i in file]\n\neps = 1\nclusters = []\nwhile data:\n    cluster = [data.pop()]\n    for dot in cluster:\n        for dot2 in data.copy():\n            if dist(dot, dot2) < eps:\n                cluster.append(dot2)\n                data.remove(dot2)\n    clusters.append(cluster)\n\nprint([len(cluster) for cluster in clusters])\n\ncenters = [centroid(cluster) for cluster in clusters]\nmin_x = min([center for center in centers], key=lambda x: x[1])[2][0]\nmax_y = max([center for center in centers], key=lambda x: x[1])[2][1]\n\nprint(int(min_x * 10_000), int(max_y * 10_000))
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Пробники ЕГЭ/пробник май/task-27.21931.py b/Пробники ЕГЭ/пробник май/task-27.21931.py
+--- a/Пробники ЕГЭ/пробник май/task-27.21931.py	(revision 5a1cbd5b6939f688546e04708c23e75939636939)
++++ b/Пробники ЕГЭ/пробник май/task-27.21931.py	(date 1747406846904)
+@@ -11,7 +11,7 @@
+     return max(dists)[1]
+ 
+ 
+-with open('../../27_A_21931.txt') as file:
++with open('27_A_21931.txt') as file:
+     data = [list(map(float, i.split())) for i in file]
+ 
+ eps = 1
+@@ -27,8 +27,6 @@
+ 
+ print([len(cluster) for cluster in clusters])
+ 
+-centers = [centroid(cluster) for cluster in clusters]
+-min_x = min([center for center in centers], key=lambda x: x[1])[2][0]
+-max_y = max([center for center in centers], key=lambda x: x[1])[2][1]
+-
+-print(int(min_x * 10_000), int(max_y * 10_000))
+\ No newline at end of file
++for cluster in clusters:
++    print(len(cluster), centroid(cluster))
++print(0.1663069 * 10000,  16.1520663 * 10000)
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"bf4ae1d2-e5fc-4791-b24a-29203512fa60\" name=\"Changes\" comment=\"27\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/8 задание ЕГЭ/16255.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/8 задание ЕГЭ/16255.py\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Python Script\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\n      <list>\n        <option value=\"macbook &lt;boris.tichshenko2007@gmail.com&gt;\" />\n      </list>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;tishchennko&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/tishchennko/EGE.git&quot;,\n    &quot;accountId&quot;: &quot;65d549d3-8f3b-43a6-8030-4372a557d878&quot;\n  }\n}</component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 5\n}</component>\n  <component name=\"ProjectId\" id=\"2qkl3ECsYgXfrtAn9Fzbq2xTbC5\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Python.101104.executor\": \"Run\",\n    \"Python.16255.executor\": \"Run\",\n    \"Python.4709.executor\": \"Run\",\n    \"Python.task - 6.executor\": \"Run\",\n    \"Python.task-1-1.executor\": \"Run\",\n    \"Python.task-1-17514.executor\": \"Run\",\n    \"Python.task-1-17542.executor\": \"Run\",\n    \"Python.task-1-17620.executor\": \"Run\",\n    \"Python.task-1-1845.executor\": \"Run\",\n    \"Python.task-1-4606.executor\": \"Run\",\n    \"Python.task-1-9732.executor\": \"Run\",\n    \"Python.task-1-9770.executor\": \"Run\",\n    \"Python.task-1.executor\": \"Run\",\n    \"Python.task-12.14372.executor\": \"Run\",\n    \"Python.task-12.19483.executor\": \"Run\",\n    \"Python.task-12.executor\": \"Run\",\n    \"Python.task-13.executor\": \"Run\",\n    \"Python.task-14-12246.executor\": \"Run\",\n    \"Python.task-14-18122.executor\": \"Run\",\n    \"Python.task-14-19406.executor\": \"Run\",\n    \"Python.task-14.18580.executor\": \"Run\",\n    \"Python.task-14.19307.executor\": \"Run\",\n    \"Python.task-14.executor\": \"Run\",\n    \"Python.task-14651.executor\": \"Run\",\n    \"Python.task-14952.executor\": \"Run\",\n    \"Python.task-15-17528.executor\": \"Run\",\n    \"Python.task-15-1859.executor\": \"Run\",\n    \"Python.task-15-2.executor\": \"Run\",\n    \"Python.task-15-3.executor\": \"Run\",\n    \"Python.task-15-4.executor\": \"Run\",\n    \"Python.task-15-4620.executor\": \"Run\",\n    \"Python.task-15-4995.executor\": \"Run\",\n    \"Python.task-15-5.executor\": \"Run\",\n    \"Python.task-15-6.executor\": \"Run\",\n    \"Python.task-15-9746.executor\": \"Run\",\n    \"Python.task-15.1.executor\": \"Run\",\n    \"Python.task-15.1320.executor\": \"Run\",\n    \"Python.task-15.18175.executor\": \"Run\",\n    \"Python.task-15.19247.executor\": \"Run\",\n    \"Python.task-15.4327.executor\": \"Run\",\n    \"Python.task-15.executor\": \"Run\",\n    \"Python.task-16.17749.executor\": \"Run\",\n    \"Python.task-16.18123.executor\": \"Run\",\n    \"Python.task-16.executor\": \"Run\",\n    \"Python.task-17.14952.executor\": \"Run\",\n    \"Python.task-17.17530.executor\": \"Run\",\n    \"Python.task-17.17873.executor\": \"Run\",\n    \"Python.task-17.18582.executor\": \"Run\",\n    \"Python.task-17.19249.executor\": \"Run\",\n    \"Python.task-17.4622.executor\": \"Run\",\n    \"Python.task-17.4705.executor\": \"Run\",\n    \"Python.task-17.9748.executor\": \"Run\",\n    \"Python.task-17.9786.executor\": \"Run\",\n    \"Python.task-17.9840.executor\": \"Run\",\n    \"Python.task-17.dosrok.executor\": \"Run\",\n    \"Python.task-19.111.executor\": \"Run\",\n    \"Python.task-19566.executor\": \"Run\",\n    \"Python.task-19715.executor\": \"Run\",\n    \"Python.task-2-1.1.executor\": \"Run\",\n    \"Python.task-2-2.executor\": \"Run\",\n    \"Python.task-2-4582.executor\": \"Run\",\n    \"Python.task-2-4607.executor\": \"Run\",\n    \"Python.task-2.executor\": \"Run\",\n    \"Python.task-23.6053.executor\": \"Run\",\n    \"Python.task-23.executor\": \"Run\",\n    \"Python.task-24.dosrok.executor\": \"Run\",\n    \"Python.task-25.19755.executor\": \"Run\",\n    \"Python.task-25.executor\": \"Run\",\n    \"Python.task-27.20497.executor\": \"Run\",\n    \"Python.task-27.21932.executor\": \"Run\",\n    \"Python.task-5-14327.executor\": \"Run\",\n    \"Python.task-5-14331.executor\": \"Run\",\n    \"Python.task-5-18578.executor\": \"Run\",\n    \"Python.task-5.14328.executor\": \"Run\",\n    \"Python.task-5.20182.executor\": \"Run\",\n    \"Python.task-5.executor\": \"Run\",\n    \"Python.task-6.17625.executor\": \"Run\",\n    \"Python.task-6.executor\": \"Run\",\n    \"Python.task-8-17627.executor\": \"Run\",\n    \"Python.task-8-18976.executor\": \"Run\",\n    \"Python.task-8-dosrok.executor\": \"Run\",\n    \"Python.task-8.17862.executor\": \"Run\",\n    \"Python.task-8.19753.executor\": \"Run\",\n    \"Python.task-8.9363.executor\": \"Run\",\n    \"Python.task-8.executor\": \"Run\",\n    \"Python.task-9.9778.executor\": \"Run\",\n    \"Python.task-9.executor\": \"Run\",\n    \"Python.task.14.20490.executor\": \"Run\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"git-widget-placeholder\": \"main\",\n    \"last_opened_file_path\": \"C:/Users/BTishenko/PycharmProjects/EGE/14-01-25-task-2\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\BTishenko\\PycharmProjects\\EGE\\14-01-25-task-2\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\BTishenko\\PycharmProjects\\EGE\\27 задание ЕГЭ\" />\n      <recent name=\"C:\\Users\\BTishenko\\PycharmProjects\\EGE\\17 задание ЕГЭ\" />\n      <recent name=\"C:\\Users\\BTishenko\\PycharmProjects\\EGE\\9 задание ЕГЭ\" />\n      <recent name=\"$PROJECT_DIR$/Пробники ЕГЭ/probnik-18-03-25\" />\n      <recent name=\"$PROJECT_DIR$/17 задание ЕГЭ\" />\n    </key>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"bf4ae1d2-e5fc-4791-b24a-29203512fa60\" name=\"Changes\" comment=\"\" />\n      <created>1735214253346</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1735214253346</updated>\n    </task>\n    <task id=\"LOCAL-00022\" summary=\"task-2\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1736867490073</created>\n      <option name=\"number\" value=\"00022\" />\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1736867490073</updated>\n    </task>\n    <task id=\"LOCAL-00023\" summary=\"w z y x\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1736868470986</created>\n      <option name=\"number\" value=\"00023\" />\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1736868470986</updated>\n    </task>\n    <task id=\"LOCAL-00024\" summary=\"w z y x\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1736868708587</created>\n      <option name=\"number\" value=\"00024\" />\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1736868708587</updated>\n    </task>\n    <task id=\"LOCAL-00025\" summary=\"w z y x\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1736869845592</created>\n      <option name=\"number\" value=\"00025\" />\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1736869845592</updated>\n    </task>\n    <task id=\"LOCAL-00026\" summary=\"commit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737468200316</created>\n      <option name=\"number\" value=\"00026\" />\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737468200316</updated>\n    </task>\n    <task id=\"LOCAL-00027\" summary=\"commit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737470096156</created>\n      <option name=\"number\" value=\"00027\" />\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737470096156</updated>\n    </task>\n    <task id=\"LOCAL-00028\" summary=\"74\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737472302358</created>\n      <option name=\"number\" value=\"00028\" />\n      <option name=\"presentableId\" value=\"LOCAL-00028\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737472302373</updated>\n    </task>\n    <task id=\"LOCAL-00029\" summary=\"9\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737473690164</created>\n      <option name=\"number\" value=\"00029\" />\n      <option name=\"presentableId\" value=\"LOCAL-00029\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737473690164</updated>\n    </task>\n    <task id=\"LOCAL-00030\" summary=\"17\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737473819094</created>\n      <option name=\"number\" value=\"00030\" />\n      <option name=\"presentableId\" value=\"LOCAL-00030\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737473819094</updated>\n    </task>\n    <task id=\"LOCAL-00031\" summary=\"23\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737473936827</created>\n      <option name=\"number\" value=\"00031\" />\n      <option name=\"presentableId\" value=\"LOCAL-00031\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737473936827</updated>\n    </task>\n    <task id=\"LOCAL-00032\" summary=\"19 отрезки\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737474488659</created>\n      <option name=\"number\" value=\"00032\" />\n      <option name=\"presentableId\" value=\"LOCAL-00032\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737474488659</updated>\n    </task>\n    <task id=\"LOCAL-00033\" summary=\"commit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737727514990</created>\n      <option name=\"number\" value=\"00033\" />\n      <option name=\"presentableId\" value=\"LOCAL-00033\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737727514990</updated>\n    </task>\n    <task id=\"LOCAL-00034\" summary=\"samostoyalka\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737729161295</created>\n      <option name=\"number\" value=\"00034\" />\n      <option name=\"presentableId\" value=\"LOCAL-00034\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737729161295</updated>\n    </task>\n    <task id=\"LOCAL-00035\" summary=\"решаю 15\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737730589901</created>\n      <option name=\"number\" value=\"00035\" />\n      <option name=\"presentableId\" value=\"LOCAL-00035\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737730589901</updated>\n    </task>\n    <task id=\"LOCAL-00036\" summary=\"решаю 15\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1737733019641</created>\n      <option name=\"number\" value=\"00036\" />\n      <option name=\"presentableId\" value=\"LOCAL-00036\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1737733019641</updated>\n    </task>\n    <task id=\"LOCAL-00037\" summary=\"commit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738073546402</created>\n      <option name=\"number\" value=\"00037\" />\n      <option name=\"presentableId\" value=\"LOCAL-00037\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738073546402</updated>\n    </task>\n    <task id=\"LOCAL-00038\" summary=\"112 переделал\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738073976186</created>\n      <option name=\"number\" value=\"00038\" />\n      <option name=\"presentableId\" value=\"LOCAL-00038\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738073976186</updated>\n    </task>\n    <task id=\"LOCAL-00039\" summary=\"43\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738157217485</created>\n      <option name=\"number\" value=\"00039\" />\n      <option name=\"presentableId\" value=\"LOCAL-00039\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738157217485</updated>\n    </task>\n    <task id=\"LOCAL-00040\" summary=\"20157588\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738162243841</created>\n      <option name=\"number\" value=\"00040\" />\n      <option name=\"presentableId\" value=\"LOCAL-00040\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738162243841</updated>\n    </task>\n    <task id=\"LOCAL-00041\" summary=\"43\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738175253853</created>\n      <option name=\"number\" value=\"00041\" />\n      <option name=\"presentableId\" value=\"LOCAL-00041\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738175253853</updated>\n    </task>\n    <task id=\"LOCAL-00042\" summary=\"476\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738177266652</created>\n      <option name=\"number\" value=\"00042\" />\n      <option name=\"presentableId\" value=\"LOCAL-00042\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738177266653</updated>\n    </task>\n    <task id=\"LOCAL-00043\" summary=\"commit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738678184753</created>\n      <option name=\"number\" value=\"00043\" />\n      <option name=\"presentableId\" value=\"LOCAL-00043\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738678184753</updated>\n    </task>\n    <task id=\"LOCAL-00044\" summary=\"commit\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738789025114</created>\n      <option name=\"number\" value=\"00044\" />\n      <option name=\"presentableId\" value=\"LOCAL-00044\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738789025114</updated>\n    </task>\n    <task id=\"LOCAL-00045\" summary=\"17 задание кодом\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1739286317602</created>\n      <option name=\"number\" value=\"00045\" />\n      <option name=\"presentableId\" value=\"LOCAL-00045\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1739286317602</updated>\n    </task>\n    <task id=\"LOCAL-00046\" summary=\"17 задание кодом\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1739352078845</created>\n      <option name=\"number\" value=\"00046\" />\n      <option name=\"presentableId\" value=\"LOCAL-00046\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1739352078845</updated>\n    </task>\n    <task id=\"LOCAL-00047\" summary=\"17 задание кодом\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1739352601807</created>\n      <option name=\"number\" value=\"00047\" />\n      <option name=\"presentableId\" value=\"LOCAL-00047\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1739352601807</updated>\n    </task>\n    <task id=\"LOCAL-00048\" summary=\"решил первое 17 из дз\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1739363416633</created>\n      <option name=\"number\" value=\"00048\" />\n      <option name=\"presentableId\" value=\"LOCAL-00048\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1739363416633</updated>\n    </task>\n    <task id=\"LOCAL-00049\" summary=\"решил второе 17 из дз\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1739364754689</created>\n      <option name=\"number\" value=\"00049\" />\n      <option name=\"presentableId\" value=\"LOCAL-00049\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1739364754689</updated>\n    </task>\n    <task id=\"LOCAL-00050\" summary=\"решил третье 17 из дз\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1739366325756</created>\n      <option name=\"number\" value=\"00050\" />\n      <option name=\"presentableId\" value=\"LOCAL-00050\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1739366325757</updated>\n    </task>\n    <task id=\"LOCAL-00051\" summary=\"решил четвертое 15 из дз\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1739366616034</created>\n      <option name=\"number\" value=\"00051\" />\n      <option name=\"presentableId\" value=\"LOCAL-00051\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1739366616035</updated>\n    </task>\n    <task id=\"LOCAL-00052\" summary=\"решил пятое 15 из дз\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1739367038193</created>\n      <option name=\"number\" value=\"00052\" />\n      <option name=\"presentableId\" value=\"LOCAL-00052\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1739367038193</updated>\n    </task>\n    <task id=\"LOCAL-00053\" summary=\"решил шестое 8 из дз\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1739547597082</created>\n      <option name=\"number\" value=\"00053\" />\n      <option name=\"presentableId\" value=\"LOCAL-00053\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1739547597082</updated>\n    </task>\n    <task id=\"LOCAL-00054\" summary=\"25 задание\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1740229723604</created>\n      <option name=\"number\" value=\"00054\" />\n      <option name=\"presentableId\" value=\"LOCAL-00054\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1740229723604</updated>\n    </task>\n    <task id=\"LOCAL-00055\" summary=\"2 задание\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1742307993718</created>\n      <option name=\"number\" value=\"00055\" />\n      <option name=\"presentableId\" value=\"LOCAL-00055\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1742307993718</updated>\n    </task>\n    <task id=\"LOCAL-00056\" summary=\"3 задание\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1742308489024</created>\n      <option name=\"number\" value=\"00056\" />\n      <option name=\"presentableId\" value=\"LOCAL-00056\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1742308489025</updated>\n    </task>\n    <task id=\"LOCAL-00057\" summary=\"5 задание\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1742309444443</created>\n      <option name=\"number\" value=\"00057\" />\n      <option name=\"presentableId\" value=\"LOCAL-00057\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1742309444443</updated>\n    </task>\n    <task id=\"LOCAL-00058\" summary=\"5 задание\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1742309702263</created>\n      <option name=\"number\" value=\"00058\" />\n      <option name=\"presentableId\" value=\"LOCAL-00058\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1742309702263</updated>\n    </task>\n    <task id=\"LOCAL-00059\" summary=\"5 задание\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1742309718201</created>\n      <option name=\"number\" value=\"00059\" />\n      <option name=\"presentableId\" value=\"LOCAL-00059\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1742309718201</updated>\n    </task>\n    <task id=\"LOCAL-00060\" summary=\"6 задание\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1742310153252</created>\n      <option name=\"number\" value=\"00060\" />\n      <option name=\"presentableId\" value=\"LOCAL-00060\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1742310153252</updated>\n    </task>\n    <task id=\"LOCAL-00061\" summary=\"8 задание\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1742311994337</created>\n      <option name=\"number\" value=\"00061\" />\n      <option name=\"presentableId\" value=\"LOCAL-00061\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1742311994337</updated>\n    </task>\n    <task id=\"LOCAL-00062\" summary=\"12 задание\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1742312902549</created>\n      <option name=\"number\" value=\"00062\" />\n      <option name=\"presentableId\" value=\"LOCAL-00062\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1742312902549</updated>\n    </task>\n    <task id=\"LOCAL-00063\" summary=\"14 задание\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1742313237941</created>\n      <option name=\"number\" value=\"00063\" />\n      <option name=\"presentableId\" value=\"LOCAL-00063\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1742313237941</updated>\n    </task>\n    <task id=\"LOCAL-00064\" summary=\"15 задание\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1742313529955</created>\n      <option name=\"number\" value=\"00064\" />\n      <option name=\"presentableId\" value=\"LOCAL-00064\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1742313529955</updated>\n    </task>\n    <task id=\"LOCAL-00065\" summary=\"16 задание\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1742313761832</created>\n      <option name=\"number\" value=\"00065\" />\n      <option name=\"presentableId\" value=\"LOCAL-00065\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1742313761832</updated>\n    </task>\n    <task id=\"LOCAL-00066\" summary=\"ccc\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1742469173601</created>\n      <option name=\"number\" value=\"00066\" />\n      <option name=\"presentableId\" value=\"LOCAL-00066\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1742469173601</updated>\n    </task>\n    <task id=\"LOCAL-00067\" summary=\"28\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1742566262853</created>\n      <option name=\"number\" value=\"00067\" />\n      <option name=\"presentableId\" value=\"LOCAL-00067\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1742566262853</updated>\n    </task>\n    <task id=\"LOCAL-00068\" summary=\"4-04-25\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1743781179321</created>\n      <option name=\"number\" value=\"00068\" />\n      <option name=\"presentableId\" value=\"LOCAL-00068\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1743781179321</updated>\n    </task>\n    <task id=\"LOCAL-00069\" summary=\"27\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1746540729980</created>\n      <option name=\"number\" value=\"00069\" />\n      <option name=\"presentableId\" value=\"LOCAL-00069\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1746540729980</updated>\n    </task>\n    <task id=\"LOCAL-00070\" summary=\"27\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1746540850954</created>\n      <option name=\"number\" value=\"00070\" />\n      <option name=\"presentableId\" value=\"LOCAL-00070\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1746540850954</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"71\" />\n    <servers />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"20157588\" />\n    <MESSAGE value=\"43\" />\n    <MESSAGE value=\"476\" />\n    <MESSAGE value=\"commit\" />\n    <MESSAGE value=\"17 задание кодом\" />\n    <MESSAGE value=\"решил первое 17 из дз\" />\n    <MESSAGE value=\"решил второе 17 из дз\" />\n    <MESSAGE value=\"решил третье 17 из дз\" />\n    <MESSAGE value=\"решил четвертое 15 из дз\" />\n    <MESSAGE value=\"решил пятое 15 из дз\" />\n    <MESSAGE value=\"решил шестое 8 из дз\" />\n    <MESSAGE value=\"25 задание\" />\n    <MESSAGE value=\"2 задание\" />\n    <MESSAGE value=\"3 задание\" />\n    <MESSAGE value=\"5 задание\" />\n    <MESSAGE value=\"6 задание\" />\n    <MESSAGE value=\"8 задание\" />\n    <MESSAGE value=\"12 задание\" />\n    <MESSAGE value=\"14 задание\" />\n    <MESSAGE value=\"15 задание\" />\n    <MESSAGE value=\"16 задание\" />\n    <MESSAGE value=\"ccc\" />\n    <MESSAGE value=\"28\" />\n    <MESSAGE value=\"4-04-25\" />\n    <MESSAGE value=\"27\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"27\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" suspend=\"THREAD\" type=\"python-line\">\n          <url>file://$PROJECT_DIR$/probnik-08-01-2025/task-8.py</url>\n          <option name=\"timeStamp\" value=\"1\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 5a1cbd5b6939f688546e04708c23e75939636939)
++++ b/.idea/workspace.xml	(date 1748009673844)
+@@ -4,9 +4,18 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="27">
++    <list default="true" id="bf4ae1d2-e5fc-4791-b24a-29203512fa60" name="Changes" comment="13">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/8 задание ЕГЭ/16255.py" beforeDir="false" afterPath="$PROJECT_DIR$/8 задание ЕГЭ/16255.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/15 задание ЕГЭ/task-15-17528.py" beforeDir="false" afterPath="$PROJECT_DIR$/15 задание ЕГЭ/24-01-25/task-15-17528.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/15 задание ЕГЭ/task-15-1859.py" beforeDir="false" afterPath="$PROJECT_DIR$/15 задание ЕГЭ/24-01-25/task-15-1859.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/15 задание ЕГЭ/task-15-4620.py" beforeDir="false" afterPath="$PROJECT_DIR$/15 задание ЕГЭ/24-01-25/task-15-4620.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/15 задание ЕГЭ/task-15-4995.py" beforeDir="false" afterPath="$PROJECT_DIR$/15 задание ЕГЭ/24-01-25/task-15-4995.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/15 задание ЕГЭ/task-15-9746.py" beforeDir="false" afterPath="$PROJECT_DIR$/15 задание ЕГЭ/24-01-25/task-15-9746.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Пробники ЕГЭ/пробник май/task-13.py" beforeDir="false" afterPath="$PROJECT_DIR$/Пробники ЕГЭ/пробник май/task-13.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Пробники ЕГЭ/пробник май/task-15.py" beforeDir="false" afterPath="$PROJECT_DIR$/Пробники ЕГЭ/пробник май/task-15.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Пробники ЕГЭ/пробник май/task-19-21.py" beforeDir="false" afterPath="$PROJECT_DIR$/Пробники ЕГЭ/пробник май/task-19-21.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Пробники ЕГЭ/пробник май/task-25.2579.py" beforeDir="false" afterPath="$PROJECT_DIR$/Пробники ЕГЭ/пробник май/task-25.2579.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Пробники ЕГЭ/пробник май/task-27.21931.py" beforeDir="false" afterPath="$PROJECT_DIR$/Пробники ЕГЭ/пробник май/task-27.21931.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -37,7 +46,7 @@
+   <component name="GithubPullRequestsUISettings">{
+   &quot;selectedUrlAndAccountId&quot;: {
+     &quot;url&quot;: &quot;https://github.com/tishchennko/EGE.git&quot;,
+-    &quot;accountId&quot;: &quot;65d549d3-8f3b-43a6-8030-4372a557d878&quot;
++    &quot;accountId&quot;: &quot;1d850a7b-724e-4417-879b-1c01125fc661&quot;
+   }
+ }</component>
+   <component name="ProjectColorInfo">{
+@@ -57,6 +66,7 @@
+     "Python.16255.executor": "Run",
+     "Python.4709.executor": "Run",
+     "Python.task - 6.executor": "Run",
++    "Python.task - 9.executor": "Run",
+     "Python.task-1-1.executor": "Run",
+     "Python.task-1-17514.executor": "Run",
+     "Python.task-1-17542.executor": "Run",
+@@ -66,16 +76,31 @@
+     "Python.task-1-9732.executor": "Run",
+     "Python.task-1-9770.executor": "Run",
+     "Python.task-1.executor": "Run",
++    "Python.task-11784.executor": "Run",
++    "Python.task-11789.executor": "Run",
+     "Python.task-12.14372.executor": "Run",
+     "Python.task-12.19483.executor": "Run",
+     "Python.task-12.executor": "Run",
++    "Python.task-13.11790.executor": "Run",
++    "Python.task-13.11794.executor": "Run",
++    "Python.task-13.11835.executor": "Run",
++    "Python.task-13.13885.executor": "Run",
++    "Python.task-13.14648.executor": "Run",
++    "Python.task-13.17526.executor": "Run",
++    "Python.task-13.17554.executor": "Run",
++    "Python.task-13.17632.executor": "Run",
++    "Python.task-13.17710.executor": "Run",
++    "Python.task-13.20807.executor": "Run",
+     "Python.task-13.executor": "Run",
+     "Python.task-14-12246.executor": "Run",
+     "Python.task-14-18122.executor": "Run",
+     "Python.task-14-19406.executor": "Run",
++    "Python.task-14.18167.executor": "Run",
+     "Python.task-14.18580.executor": "Run",
+     "Python.task-14.19307.executor": "Run",
+     "Python.task-14.executor": "Run",
++    "Python.task-14355.executor": "Run",
++    "Python.task-14438.executor": "Run",
+     "Python.task-14651.executor": "Run",
+     "Python.task-14952.executor": "Run",
+     "Python.task-15-17528.executor": "Run",
+@@ -93,10 +118,14 @@
+     "Python.task-15.18175.executor": "Run",
+     "Python.task-15.19247.executor": "Run",
+     "Python.task-15.4327.executor": "Run",
++    "Python.task-15.6827.executor": "Run",
++    "Python.task-15.9162.executor": "Run",
+     "Python.task-15.executor": "Run",
+     "Python.task-16.17749.executor": "Run",
++    "Python.task-16.17755.executor": "Run",
+     "Python.task-16.18123.executor": "Run",
+     "Python.task-16.executor": "Run",
++    "Python.task-16833.executor": "Run",
+     "Python.task-17.14952.executor": "Run",
+     "Python.task-17.17530.executor": "Run",
+     "Python.task-17.17873.executor": "Run",
+@@ -104,43 +133,51 @@
+     "Python.task-17.19249.executor": "Run",
+     "Python.task-17.4622.executor": "Run",
+     "Python.task-17.4705.executor": "Run",
++    "Python.task-17.5882.executor": "Run",
++    "Python.task-17.6791.executor": "Run",
+     "Python.task-17.9748.executor": "Run",
+     "Python.task-17.9786.executor": "Run",
+     "Python.task-17.9840.executor": "Run",
+-    "Python.task-17.dosrok.executor": "Run",
+-    "Python.task-19.111.executor": "Run",
+-    "Python.task-19566.executor": "Run",
+-    "Python.task-19715.executor": "Run",
++    "Python.task-17.executor": "Run",
++    "Python.task-19-21.executor": "Run",
++    "Python.task-19.19635.executor": "Run",
+     "Python.task-2-1.1.executor": "Run",
+     "Python.task-2-2.executor": "Run",
+     "Python.task-2-4582.executor": "Run",
+     "Python.task-2-4607.executor": "Run",
+     "Python.task-2.executor": "Run",
++    "Python.task-20833.executor": "Run",
++    "Python.task-23.13968.executor": "Run",
+     "Python.task-23.6053.executor": "Run",
+     "Python.task-23.executor": "Run",
+-    "Python.task-24.dosrok.executor": "Run",
++    "Python.task-24.executor": "Run",
++    "Python.task-25.14442.executor": "Run",
+     "Python.task-25.19755.executor": "Run",
++    "Python.task-25.24.04.executor": "Run",
++    "Python.task-25.8696.executor": "Run",
+     "Python.task-25.executor": "Run",
+-    "Python.task-27.20497.executor": "Run",
+-    "Python.task-27.21932.executor": "Run",
+     "Python.task-5-14327.executor": "Run",
+     "Python.task-5-14331.executor": "Run",
+     "Python.task-5-18578.executor": "Run",
+     "Python.task-5.14328.executor": "Run",
+     "Python.task-5.20182.executor": "Run",
++    "Python.task-5.21891.executor": "Run",
+     "Python.task-5.executor": "Run",
+     "Python.task-6.17625.executor": "Run",
+     "Python.task-6.executor": "Run",
+     "Python.task-8-17627.executor": "Run",
+     "Python.task-8-18976.executor": "Run",
+-    "Python.task-8-dosrok.executor": "Run",
+     "Python.task-8.17862.executor": "Run",
+     "Python.task-8.19753.executor": "Run",
++    "Python.task-8.20270.executor": "Run",
++    "Python.task-8.4320.executor": "Run",
++    "Python.task-8.6591.executor": "Run",
+     "Python.task-8.9363.executor": "Run",
+     "Python.task-8.executor": "Run",
+     "Python.task-9.9778.executor": "Run",
+     "Python.task-9.executor": "Run",
+     "Python.task.14.20490.executor": "Run",
++    "Python.tasl-15.executor": "Run",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "RunOnceActivity.git.unshallow": "true",
+     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+@@ -153,17 +190,17 @@
+       <recent name="C:\Users\BTishenko\PycharmProjects\EGE\14-01-25-task-2" />
+     </key>
+     <key name="MoveFile.RECENT_KEYS">
+-      <recent name="C:\Users\BTishenko\PycharmProjects\EGE\27 задание ЕГЭ" />
+-      <recent name="C:\Users\BTishenko\PycharmProjects\EGE\17 задание ЕГЭ" />
+-      <recent name="C:\Users\BTishenko\PycharmProjects\EGE\9 задание ЕГЭ" />
+-      <recent name="$PROJECT_DIR$/Пробники ЕГЭ/probnik-18-03-25" />
++      <recent name="$PROJECT_DIR$/15 задание ЕГЭ/24-01-25" />
+       <recent name="$PROJECT_DIR$/17 задание ЕГЭ" />
++      <recent name="$PROJECT_DIR$/24 задания ЕГЭ/2023" />
++      <recent name="$PROJECT_DIR$/Пробники ЕГЭ/Пробник до 25" />
++      <recent name="$PROJECT_DIR$/Пробники ЕГЭ/22-04-25" />
+     </key>
+   </component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+-        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
++        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+       </set>
+     </attachedChunks>
+   </component>
+@@ -544,29 +581,29 @@
+       <option name="project" value="LOCAL" />
+       <updated>1742566262853</updated>
+     </task>
+-    <task id="LOCAL-00068" summary="4-04-25">
++    <task id="LOCAL-00068" summary="пробник">
+       <option name="closed" value="true" />
+-      <created>1743781179321</created>
++      <created>1744485179995</created>
+       <option name="number" value="00068" />
+       <option name="presentableId" value="LOCAL-00068" />
+       <option name="project" value="LOCAL" />
+-      <updated>1743781179321</updated>
++      <updated>1744485179996</updated>
+     </task>
+-    <task id="LOCAL-00069" summary="27">
++    <task id="LOCAL-00069" summary="13">
+       <option name="closed" value="true" />
+-      <created>1746540729980</created>
++      <created>1745183998217</created>
+       <option name="number" value="00069" />
+       <option name="presentableId" value="LOCAL-00069" />
+       <option name="project" value="LOCAL" />
+-      <updated>1746540729980</updated>
++      <updated>1745183998217</updated>
+     </task>
+-    <task id="LOCAL-00070" summary="27">
++    <task id="LOCAL-00070" summary="13">
+       <option name="closed" value="true" />
+-      <created>1746540850954</created>
++      <created>1746263048212</created>
+       <option name="number" value="00070" />
+       <option name="presentableId" value="LOCAL-00070" />
+       <option name="project" value="LOCAL" />
+-      <updated>1746540850954</updated>
++      <updated>1746263048212</updated>
+     </task>
+     <option name="localTasksCounter" value="71" />
+     <servers />
+@@ -595,9 +632,9 @@
+     <MESSAGE value="16 задание" />
+     <MESSAGE value="ccc" />
+     <MESSAGE value="28" />
+-    <MESSAGE value="4-04-25" />
+-    <MESSAGE value="27" />
+-    <option name="LAST_COMMIT_MESSAGE" value="27" />
++    <MESSAGE value="пробник" />
++    <MESSAGE value="13" />
++    <option name="LAST_COMMIT_MESSAGE" value="13" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+Index: Пробники ЕГЭ/пробник май/task-13.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from ipaddress import ip_network\n\nfor mask in range(33):\n    net1 = ip_network(f'200.154.190.12/{mask}', False)\n    net2 = ip_network(f'200.154.184.0/{mask}', False)\n    if net1.network_address == net2.network_address:\n        print(net1.netmask)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Пробники ЕГЭ/пробник май/task-13.py b/Пробники ЕГЭ/пробник май/task-13.py
+--- a/Пробники ЕГЭ/пробник май/task-13.py	(revision 5a1cbd5b6939f688546e04708c23e75939636939)
++++ b/Пробники ЕГЭ/пробник май/task-13.py	(date 1747406846909)
+@@ -4,4 +4,7 @@
+     net1 = ip_network(f'200.154.190.12/{mask}', False)
+     net2 = ip_network(f'200.154.184.0/{mask}', False)
+     if net1.network_address == net2.network_address:
+-        print(net1.netmask)
+\ No newline at end of file
++        print(net1.netmask)
++
++number = 240
++print(bin(number)[2:])
+\ No newline at end of file
+Index: Пробники ЕГЭ/пробник май/task-19-21.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>def f(x, c, win):\n    if x >= 100:\n        return c in win\n    if c > max(win):\n        return 0\n    moves = [f(x + 7, c + 1, win), f(x * 2, c + 1, win)]\n    if c % 2 != max(win) % 2:\n        return any(moves)\n    else:\n        return all(moves)\n\nfor s in range(1, 99 + 1):\n    if f(s, 0, [2, 4]) == 1 and f(s, 0, [2]) == 0:\n        print(s)
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Пробники ЕГЭ/пробник май/task-19-21.py b/Пробники ЕГЭ/пробник май/task-19-21.py
+--- a/Пробники ЕГЭ/пробник май/task-19-21.py	(revision 5a1cbd5b6939f688546e04708c23e75939636939)
++++ b/Пробники ЕГЭ/пробник май/task-19-21.py	(date 1747406846922)
+@@ -10,5 +10,5 @@
+         return all(moves)
+ 
+ for s in range(1, 99 + 1):
+-    if f(s, 0, [2, 4]) == 1 and f(s, 0, [2]) == 0:
++    if f(s, 0, [1]) == 0 and f(s, 0, [2]) == 0:
+         print(s)
+\ No newline at end of file
+diff --git a/15 задание ЕГЭ/task-15-17528.py b/15 задание ЕГЭ/24-01-25/task-15-17528.py
+rename from 15 задание ЕГЭ/task-15-17528.py
+rename to 15 задание ЕГЭ/24-01-25/task-15-17528.py
+diff --git a/15 задание ЕГЭ/task-15-4620.py b/15 задание ЕГЭ/24-01-25/task-15-4620.py
+rename from 15 задание ЕГЭ/task-15-4620.py
+rename to 15 задание ЕГЭ/24-01-25/task-15-4620.py
+diff --git a/15 задание ЕГЭ/task-15-4995.py b/15 задание ЕГЭ/24-01-25/task-15-4995.py
+rename from 15 задание ЕГЭ/task-15-4995.py
+rename to 15 задание ЕГЭ/24-01-25/task-15-4995.py
+diff --git a/15 задание ЕГЭ/task-15-1859.py b/15 задание ЕГЭ/24-01-25/task-15-1859.py
+rename from 15 задание ЕГЭ/task-15-1859.py
+rename to 15 задание ЕГЭ/24-01-25/task-15-1859.py
+diff --git a/15 задание ЕГЭ/task-15-9746.py b/15 задание ЕГЭ/24-01-25/task-15-9746.py
+rename from 15 задание ЕГЭ/task-15-9746.py
+rename to 15 задание ЕГЭ/24-01-25/task-15-9746.py
