@@ -1,13 +1,14 @@
 from itertools import *
 
 def f(x):
-    P = 254 <= x <= 800
-    Q = 410 <= x <= 823
+    P = 257 <= x <= 1000
+    Q = 5 <= x <= 100
+    R = 99 <= x <= 258
     A = A1 <= x <= A2
-    return (P and (not A)) <= Q
+    return (A <= R) and ((not(A <= P)) <= Q)
 
 ans = []
-line = [x/ 10 for x in range(254 * 10, 823 * 10)]
+line = [x / 5 for x in range(5 * 5, 1000 * 5)]
 
 for A1, A2 in combinations(line, 2):
     if all(f(x) for x in line):

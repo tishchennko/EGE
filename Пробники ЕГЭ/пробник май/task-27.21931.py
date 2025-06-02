@@ -11,7 +11,7 @@ def centroid(cluster):
     return max(dists)[1]
 
 
-with open('../../27_A_21931.txt') as file:
+with open('27_A_21931.txt') as file:
     data = [list(map(float, i.split())) for i in file]
 
 eps = 1
@@ -27,8 +27,6 @@ while data:
 
 print([len(cluster) for cluster in clusters])
 
-centers = [centroid(cluster) for cluster in clusters]
-min_x = min([center for center in centers], key=lambda x: x[1])[2][0]
-max_y = max([center for center in centers], key=lambda x: x[1])[2][1]
-
-print(int(min_x * 10_000), int(max_y * 10_000))
+for cluster in clusters:
+    print(len(cluster), centroid(cluster))
+print(0.1663069 * 10000,  16.1520663 * 10000)
